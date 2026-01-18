@@ -1,0 +1,23 @@
+********************************************************************************
+                               Automarker Report                                
+********************************************************************************
+- Compiling code ...
+
+int strlen(char str[]){
+int indexOf(char str[], char a[]){
+void copystr(char str[], char copy[]){
+void indexDel(char str[], int i){
+  char tempstr[1024];
+  char v[1024]="aeiouAEIOU";
+GCC has found invalid array notation
+
+--------------------------------------------------------------------------------
+
+There were errors in compiling your submission and no executable could be 
+produced. No points will be assigned to you. If you think this is a mistake, 
+please contact us.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+Total: 0 / 10 marks

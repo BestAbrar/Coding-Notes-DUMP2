@@ -1,0 +1,78 @@
+Properties of graphs
+Number of edges
+  -Directed graphs: max no of edges <= n(n-1) roughly n^2
+  -Undirected graphs: max # of edges <= n(n-1)/2 roughly n^2
+complexity
+aim for O(|V|) where n = |V| (nodes)
+O(|E|) is bad where m = |E| (edges)
+  |E|<=|V|^2
+a graph containing nodes with no edges is not technically considered a graph
+Dense vs Sparse graph
+Sparse graph is only when E<<|V|^2
+
+Graph terminologies
+path - sequence of nodes connected by edges, first node is not the same as the last
+cycle - sequence of nodes where the first node is also the last node
+
+Connected graph
+undirected graph- where there is no direction for the edges between nodes (bidirectional)
+Strong directed graph
+directed graph- there is a direction to the edge between the nodes, in order for this graph
+to be strongly connected they must contain some path between all nodes
+
+Neighbors- all of the adjacent nodes of path length 1
+  -out neighbors- important in directed graphs, edge points away from node to other nodes
+  -in neighbors- nodes with edges that point to node
+Neighborhood- same as neighborhood but we make a curly bracket to indicate group
+Degree- number of nodes/edges connected to a node/number of neighbors/in Neighborhood
+  - in-degree and out-degree follows the same rules as in/out Neighbors
+
+common problems in graphs
+path- is there a path between 2 given nodes
+shortest path- what is the shortest path between 2 nodes
+cycle- does the graph contain cycle
+
+Connectivity
+  *is graph Connected
+  *is there vertex whose removal disconnects the graphs
+Planatary-Can you draw the given grapy on a piece of paper without crossing edges
+Isomorphism- are two graphs isomorphic
+
+when considering a path you must consider the degree of each node, if all nodes have
+an odd degree, a path with all edges can't be made
+
+how to represent graphs
+Ordered array
+array for vertices
+array for edges where each index represents 2 nodes to indicate the edge
+space complexity O(|V|+|E|) <- not bad
+Time complexity
+  - to determine if 2 nodes are adjacent O(|E|)
+  - neighbors of given node complexity = O(|E|) ~ O(V^2)
+
+*MATRIXES (good for data manipulation)
+NOTE- matrixes don't work for directed graphs
+typically used in sparse graphs
+
+*Adjacency list (good for storage)
+make an array of pointers
+  -space efficient
+  -Querying an edge requires list traversal
+
+Recursion
+divide and concur strategy
+Applications of Divide and Conquer
+  -Binary search
+  -Merge short
+
+Merge Sort
+Breaks array into parts recursively until there is only one element in the sub-array then sort and merge,
+then sort each section and merge and continue until the whole array is sorted
+  -over writing existing array when the elements in the sub array are sorted
+  Complexity of merge sort is O(nlog(n)) where complexity = time to split + time to merge (time to split is trivial) thus
+  complexity = time to merge
+
+disadvantages of recursion
+ - Recursion might need more space (circumstantial) ex. call stack => memory wasted
+ - hard to trace
+ - only applicable for a subset of problems

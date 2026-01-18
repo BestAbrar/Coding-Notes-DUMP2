@@ -1,0 +1,49 @@
+********************************************************************************
+                               Automarker Report                                
+********************************************************************************
+- Compiling code ...
+
+In file included from tests.c:10:
+ex11.c: In function ‘is_valid_sudoku’:
+ex11.c:87:3: warning: implicit declaration of function ‘set_mem’
+[-Wimplicit-function-declaration]
+   87 |   set_mem(mem);
+      |   ^~~~~~~
+ex11.c:94:10: warning: implicit declaration of function ‘in_mem’
+[-Wimplicit-function-declaration]
+   94 |       if(in_mem(mem,sudoku[a][b]))
+      |          ^~~~~~
+ex11.c: In function ‘solve_sudoku_recursion’:
+ex11.c:158:10: warning: implicit declaration of function ‘isSafe’
+[-Wimplicit-function-declaration]
+  158 |      if (isSafe(sudoku, a, b, num)==1){
+      |          ^~~~~~
+ex11.c: In function ‘solve_sudoku’:
+ex11.c:171:3: warning: implicit declaration of function ‘set_mem_matrix’
+[-Wimplicit-function-declaration]
+  171 |   set_mem_matrix();
+      |   ^~~~~~~~~~~~~~
+/usr/bin/ld: /tmp/cccyKh6e.o: in function `is_valid_sudoku':
+tests.c:(.text+0x2c): undefined reference to `set_mem'
+/usr/bin/ld: tests.c:(.text+0xec): undefined reference to `in_mem'
+/usr/bin/ld: tests.c:(.text+0x174): undefined reference to `set_mem'
+/usr/bin/ld: tests.c:(.text+0x1db): undefined reference to `in_mem'
+/usr/bin/ld: tests.c:(.text+0x263): undefined reference to `set_mem'
+/usr/bin/ld: tests.c:(.text+0x2ec): undefined reference to `in_mem'
+/usr/bin/ld: tests.c:(.text+0x38d): undefined reference to `set_mem'
+/usr/bin/ld: /tmp/cccyKh6e.o: in function `solve_sudoku_recursion':
+tests.c:(.text+0x480): undefined reference to `isSafe'
+/usr/bin/ld: /tmp/cccyKh6e.o: in function `solve_sudoku':
+tests.c:(.text+0x541): undefined reference to `set_mem_matrix'
+collect2: error: ld returned 1 exit status
+
+--------------------------------------------------------------------------------
+
+There were errors in compiling your submission and no executable could be 
+produced. No points will be assigned to you. If you think this is a mistake, 
+please contact us.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+Total: 0 / 7 marks

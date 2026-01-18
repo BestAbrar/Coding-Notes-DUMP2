@@ -1,0 +1,29 @@
+********************************************************************************
+*******************************************************************************
+                              PART 2 REPORT
+*******************************************************************************
+
+********************************************************************************
+- Compiling code ...
+
+In file included from P2Test.c:4:
+turtle-pro.c:19:10: fatal error: String.h: No such file or directory
+   19 | #include <String.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+In file included from delete2.c:4:
+turtle-pro.c:19:10: fatal error: String.h: No such file or directory
+   19 | #include <String.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+
+--------------------------------------------------------------------------------
+
+There were errors in compiling your submission and no executable could be 
+produced. No points will be assigned to you. If you think this is a mistake, 
+please contact us.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+Total: 0 / 30 marks

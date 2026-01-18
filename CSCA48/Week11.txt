@@ -1,0 +1,86 @@
+//week 11
+QuickSort
+pivot
+send pivot to the last index of the array
+then set pointer to the first element of the array and compare with the pivot
+if pivot is larger than value at pointer than swap the first index of array
+with the pointer
+
+3,6,1,4,5
+        ^ pivot
+3,6,1,4,5
+^ pointer
+
+since 3 is smaller than pivot(5) than 3 is set at first element of array, then
+pointer skips the first index assuming that it is now sorted
+
+3,6,1,4,5
+  ^ pointer
+
+since value at pointer is larger than pivot we move pointer to the next index
+
+3,6,1,4,5
+  ^ ^ pointer
+  | "first index"
+since value at pointer is smaller than pivot we swap the value at pointer with the
+"first" element in the search array
+
+3,1,6,4,5
+
+this continues until pointer reaches past the second last index
+
+3,1,4,6,5
+        ^ pointer at pivot
+
+now we swap the pivot with the first element in the array which was larger than the pivot
+3,1,4,5,6
+
+Recursion
+recur(){
+//base cases
+//recursive calls
+recur (6)
+other statements
+}
+
+other statements in the recursion function are put on hold until the recursion reaches the base case(s)
+after which other statements will be performed
+Call stack- a means to represent a trace for recursive functions, where the "stack" refers to each recursive call
+one on top of another, the top of the stack is removed once base condition is meet
+
+tail recursion- recursive call is the last thing method/function returns, nothing is done to it however, the values within the
+call can be altered
+
+Iteration vs Recursion vs Tail Recursion
+
+Graph traversal
+BFS vs DFS (Breath first search vs Depth first search)
+DFS- is the best option for path finding
+BFS -> stores neighbors in a certain order, is best option for finding the shortest path
+
+recur(6)
+recur(5)
+  recur(4)
+
+    recur(3)
+      recur(2)
+        recur(1)
+recur(4)
+  recur(3)
+    recur(2)
+      recur(1)
+recur(3)
+  recur(2)
+    recur(1)
+recur(2)
+  recur(1)
+recur(1)
+
+
+int i = 0
+if (n>1)
+ recur(n-1)
+ for (i=0; i<n i++){
+  print("*");
+ }
+ }

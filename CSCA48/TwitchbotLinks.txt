@@ -1,0 +1,9 @@
+Public 
+(disaster): $(urlfetch https://twitch.center/customapi/quote?token=ee420015&data=$(querystring))
+(request): $(urlfetch https://twitch.center/customapi/quote?token=17e2a2d7&data=$(querystring))
+Private
+(disaster): $(urlfetch https://twitch.center/customapi/addquote?token=7199693edafe7192&data=$(querystring))
+(request): $(urlfetch https://twitch.center/customapi/delquote?token=155019e70b68be32&data=$(querystring))
+
+!addcom -cd=5 !disaster -a=!disasterp2 $(eval decodeURIComponent(`$(querystring)`).toLowerCase()==`reset`?`PRIVATE_TOKEN&data=$(time EST "MMM D Y HH:mm:ss z")`:`PRIVATE_TOKEN COUNTUP`)
+!addcom -cd=5 !disasterp2 $(eval a=`$(urlfetch https://twitch.center/customapi/addquote?token=$(query))`;if(`$(query)`.includes(`PRIVATE_TOKEN`)){`$(2)`==`COUNTUP`?`It has been $(countup $(urlfetch http://twitch.center/customapi/quote?token=PUBLIC_TOKEN&data=0&no_id=1)) since the last disaster.`:`$(user) has reset the disaster counter.`;}else{`Use !disaster`;})

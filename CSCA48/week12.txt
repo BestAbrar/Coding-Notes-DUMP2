@@ -1,0 +1,110 @@
+Object oriented programing
+How will other programs interact with our module
+* how to set up an interface
+Which functions to make available to the user
+what is the difference between module, library and API
+Module only has a single functionality (complex numbers)
+Library -> multiple modules
+API (application programing interface) -> how to use library, documentation
+
+blackbox for sofware modules
+How to write APIs in C
+what we will discoveredSome missing concepts in C
+Indroduction to concepts in Object oriented programming OOPs
+What we will not discovered
+*C++ Syntax
+keep note of the concepts
+inheritance
+polymorphism
+modules reason for including guards
+
+preprocessing stage
+C APIs examples
+-standard C Library
+The Windows APIs
+The Linusx Kernal API
+Image Libraries
+C features
+two related tasks:
+privide way to specify actions to be exicuted by the machine (requires a
+language that is close to the machine)
+
+low - level language with high level features
+-C is a minimal language that is closer to low level language
+
+What is missing in C
+C provides no way to hide or protect sensitive data from being misused or accessed in a way
+that was not intended by us when we developed the module
+Dificult to wrap data and functions for that
+
+Stack ADT
+LIFO (last in-first out)-where last command added (push) to stack is the first exicuted (pop)
+PRIMARY functions
+Stack() creates a new empty Stack
+push() push item ontop of Stack
+pop() removes top item form the Stack
+peek() returns the top item from stack but doesn't remove it
+HELPER functions
+isEmpty() returns if stack is empty or not
+isFull() returns if the stack is at capacity or not
+size() returns the number of items present in the Stack
+
+Never add struct data type into .h files, always in the implementation .c file
+declaration is in .h file
+
+Opaque data type-are considered opaque because we don't know how the data of the
+file is stored/organized
+
+OOP
+Uses incapsulaiton to protect information
+C with classes = C++
+classes= data +code -> user defined data type
+objects= instance of class -> variables
+
+other feature OOP offers
+  *abstraction
+  class
+  Object
+  Encapsulation
+  inheritance
+  Polymorphism- object takes
+C++ is a more high level language than C
+abstraction -Extracting out the essential characteristics of a Thing
+access modifiers = public, private, protected
+variables are technically considered objects
+Access modifiers
+inside access modifiers can be data as well as functions
+public-some function that belongs to a class
+private- only visible within the class
+protected-visible to functions inside the class and classes derived from said class
+Constructor- a function that is called when new instance of class is being called
+  - ensures that objects always have valid data to work with
+  - sets initial value of objects
+Destructor- job is to release memory and close files
+destructor- runs automatically at the end of a function unless specified otherwise
+object-instance of a class
+(CLASS) name_of_object -> how we create a object
+can't have the same function name twice
+Method overloading with constructors
+can have the same method name that pass different parameters
+inheritance
+derived class, inherits the data and methods from the base class, derived classes can have
+additional classes
+2 benitifs
+  1. Reuse- can use the methods in the base class for multiple derived classes, you can further
+  change multiple derived classes by doing a single change to the base class
+  2. abstraction information hiding-some methods in the base class are not accessable to the derived
+  class
+inheritance bad design
+  -multiple base classes with only one derived class
+  -single base class and single derived class
+  -base class and multiple derived classes
+    -in series or parallel, note in series base class is considered a class that doesn't derive
+    any classes
+classes inherited privatly will always be private, when inheritance isn't mentioned
+take note of what is a bad design and what is a good design for inheritance
+<T> means template, working on anything that isn't primitive type
+Avoid deep inheritance trees
+Polymorphism-ability for object to take many different forms, an extension of inheritance
+the idea is using a more base class to do the job of multiple derived classes
+polymorphism in APIs

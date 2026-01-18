@@ -1,0 +1,51 @@
+/*
+building BST complexity is O(nlog(n)) *average case
+building Linked list has complexity of O(n) *worst case
+trees are considered dynamic data structures depending on how the tree is implemented
+complete binary tree
+- tree with n nodes has log2(n) levels (however when considering the average case it is O(log(n)))
+intigers in accending or decending order and insert int o BST in the same order
+then n nodes = n levels
+  -worst case BST senario, BST acts like linked list
+  -search effeciency is O(n)
+binary search tree-always consider average case, this is due to randomness
+  -therefore we consider the search effeciency of BST search as O(log(n)) THIS IS IMPORTANT
+
+//successor vs predecessor
+//successor is the left most node/smallest element of the right child
+//predecessor is the right most node/largest element of the left child
+// average complexity of deleting BTS is log(n) regardless of the case
+//
+//tree treversal
+//In-order treversal
+Algorithm (in order(tree))
+  1. Traverse the left subtree in-orer(left-subtree)
+  2. Visit the root.
+  3. Traverse the right subtree in-order(right-subtree)
+//pre-order traversal-useful for copying the BST
+  1. Visit the root
+  2. Traverse the left sub tree preorder(left-subtree)
+  3. Traverse the right sub tree preorder(right-subtree)
+//post-order traversel-useful for deleting the tree
+  1. Traverse the left subtree post-order (left sub-tree)
+  2. Traverse the right subtree post-order(right-subtree)
+  3. Visit the root.
+complexity of all the traversal schemes is O(n)
+
+sorting
+Array typical sorting algorithm is O(n^2) the best is O(nlog(n)) (quick sort)
+BST typical sort for traversal is O(n) otherwise BST is considered automatically sorted
+
+search
+Sorted Array = O(log(n))
+BST = O(log(n)) *average
+Linked list O(n) *worst
+
+storage
+Stored Array-Bad
+BST
+Linked list
+
+how to chose which algorithm to used
+*size of input
+  -large N vs small N

@@ -1,0 +1,130 @@
+********************************************************************************
+                               Automarker Report                                
+********************************************************************************
+- Compiling code ...
+
+In file included from tests.c:15:
+ex3.c:19:5: warning: conflicting types for built-in function ‘strlen’;
+expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+   19 | int strlen(char str[]){
+      |     ^~~~~~
+ex3.c:12:1: note: ‘strlen’ is declared in header ‘<string.h>’
+   11 | #include <stdio.h>
+  +++ |+#include <string.h>
+   12 | // NO additional imports allowed. You *can* make helper functions,
+and in fact I strongly
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Basic Test Case
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Substring at Beginning
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Substring in Middle
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Substring at End
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Delete from Beginning
+--------------------------------------------------------------------------------
+tests: tests.c:99: test_04: Assertion `m_strcmp(str, " am a empty replace") == 0' failed.
+run.sh: line 51: 232106 Aborted                 (core dumped) ./tests "$1"
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Delete from Middle
+--------------------------------------------------------------------------------
+tests: tests.c:109: test_05: Assertion `m_strcmp(str, "I am a  replace") == 0' failed.
+run.sh: line 51: 232110 Aborted                 (core dumped) ./tests "$1"
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Delete from End
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Delete Invalid String due to Substring Invalid Capitalization
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Delete with Multiple Occurrences of Substring
+--------------------------------------------------------------------------------
+tests: tests.c:139: test_08: Assertion `m_strcmp(str, "I do have multiple substrings") == 0' failed.
+run.sh: line 51: 232120 Aborted                 (core dumped) ./tests "$1"
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Delete Entire String
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking replaceSubstring() Delete Invalid String due to Substring Missing
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking changeSubstringCase() Basic Test Case
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking changeSubstringCase() Change at Beginning
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking changeSubstringCase() Change at End
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking changeSubstringCase() Nothing to Change
+--------------------------------------------------------------------------------
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+Total: 12 / 15 marks

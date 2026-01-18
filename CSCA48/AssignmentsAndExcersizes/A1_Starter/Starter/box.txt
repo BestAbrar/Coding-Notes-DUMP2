@@ -1,0 +1,13 @@
+penup
+forward 100
+right
+forward 100
+pendown
+forward 300
+right
+backwards 300
+left
+backwards 300
+left
+backwards 300
+left

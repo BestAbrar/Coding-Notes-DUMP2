@@ -1,0 +1,41 @@
+1. need to add return memory box at end of z
+bozes should be assigned from left to right by variable declaration order
+	*it was okay if you put the ereturn at the very start or right after z, but not after 'O'
+If you didn't do correct order, you were given part marks for correct values of z, correct type of variable
+(but you WON'T get partial marks at all next time if it isn't in order
+
+1 mark for correct variable and types
+1 makr for correct final value of x
+1 mark for correct values in word(marks weren't taken off if you forgot quotes this time)
+1 mark for correct valu of z (which is '\0')
+1 mark of 'O' in box 0603
+Question 2:
+Correct:a,e,f
+Incorrect: b,c,d
+Note for e
+* Can't free a variable that isn't malloced or calloced (free(x) would cause memory problem!)
+Question 3:
+1 mark for calloc
+1 mark for strcpy
+1 mark for set n_books = 1
+1 mark for type and copies
+1 mark for loc
+-1 for the_book"->"
+Question 4:a
+Question 5:
+1 mark for doing some kind of check that b-> the_book.copies <=1
+1 mark for dynamically allocating a new node within your loop
+Question 6:
+1 makr for dicription of worst case senario
+1 mark for stating how each CS books should be checked with each biobook resulting in O(n^2)
+ * must specify that CS linked list and BS linked list have n/2 elements
+Question 7
+3 marks for correct complexit O(N)
+2 marks for explination
+ * 1 mark for describeing the process of checkeing each CS book with c Bio books
+ * 1 mark for stating c<<N and it is constant so we write O(cN)=O(N)
+Question 8
+part 1 O(mn)
+part 2 O(m) 2 marks
+	O(1 point for explination) Since author's list can have up to M members, we need to traverse author's list once
+part 3 O(NM^2) or O(M^2N^2) or O(M^2N^2) if given a sufficient explination

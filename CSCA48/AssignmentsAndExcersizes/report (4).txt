@@ -1,0 +1,130 @@
+********************************************************************************
+                               Automarker Report                                
+********************************************************************************
+- Compiling code ...
+
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Basic Test Case
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() All Matches
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Mixed Order
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Mixed Order
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Mixed Order
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Mixed Order
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Mixed Order
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Mixed Order
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Mixed Order
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Mixed Order
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() No Matches
+--------------------------------------------------------------------------------
+Looks good.
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Empty Nationality Table
+--------------------------------------------------------------------------------
+Looks good.
+OK!
+
+- Passed test. 1 / 1 marks.
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Empty Foods table
+--------------------------------------------------------------------------------
+run.sh: line 52: 713159 Segmentation fault      (core dumped) ./tests "$1"
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Lots of Mixed Orders
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+  Running Test: Checking innerJoin() Lots of Mixed Orders
+--------------------------------------------------------------------------------
+Length of solutions do not match.
+Failed!
+
+- Failed test. 0 / 1 marks
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+Total: 2 / 15 marks
